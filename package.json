@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-proto-css",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -10,11 +10,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/poetic/ember-cli-proto-css",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Daniel Ochoa <daniel@poeticsystems.com>",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
