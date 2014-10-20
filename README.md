@@ -27,14 +27,19 @@ apps with cordova and ember as simple as possible.
 The goal of ember-cli-proto-css is to eventually become a css framework we can
 easily attach to our Ember/Cordova apps and out of the box have ios-like
 navigation styles, touch overflow for certain areas and other commonly used
-elements that we keep re-writing every time we bootstrap a new app.
+elements that we keep rewriting every time we start a new app.
 
-# Installation
+## Installation
 
 Inside of a generated ember-cli project run:
 
 ```sh
 npm install --save-dev ember-cli-proto-css
+```
+## Usage
+
+```sh
+ember g proto-css
 ```
 
 This will generate the SMACSS file structure with files in the .scss format, as
