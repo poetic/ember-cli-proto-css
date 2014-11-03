@@ -1,3 +1,7 @@
+var fs = require('fs');
+var path = require('path');
+var chalk = require('chalk');
+
 module.exports = {
 
   normalizeEntityName: function(entityName) {
@@ -6,6 +10,14 @@ module.exports = {
   },
 
   afterInstall: function() {
+    // remove default app.css
+    var defaultAppCssFile = path.join(this.project.root, 'app', 'styles', 'app.css');
+
+    if (fs.existsSync(defaultAppCssFile)) {
+      fs.unlinkSync(defaultAppCssFile);
+      console.log(chalk.green.bold('Removing default app.css file...'));
+    }
+
     return this.addPackageToProject('ember-cli-sass');
   }
 
