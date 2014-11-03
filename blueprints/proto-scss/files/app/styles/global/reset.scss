@@ -55,20 +55,4 @@ table {
   border-spacing: 0;
 }
 
-/*
-/
-/ Mobile Specific
-/
-*/
 
-* {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-tap-highlight-color: transparent;
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  input, textarea {
-    -webkit-touch-callout: auto;
-    -webkit-user-select: auto;
-  }
-}
