@@ -15,7 +15,7 @@ module.exports = {
 
     if (fs.existsSync(defaultAppCssFile)) {
       fs.unlinkSync(defaultAppCssFile);
-      this.ui.writeLine(chalk.green('Removing default app.css file...'));
+      this.ui.writeLine('  ' + chalk.green('Removing default app.css file'));
     }
 
     return this.addPackageToProject('ember-cli-sass');
