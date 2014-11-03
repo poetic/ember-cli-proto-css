@@ -1,9 +1,14 @@
 // You need to manually import any scss files under modules
 
 @import
-  'variables',
+  'global/variables',
+  'global/mixins',
+  'global/functions',
+  'global/extendables',
+  'global/reset.scss',
   'base',
-  'mixins',
+  'layout',
+  'module',
   'state',
   'layout/grid',
   'layout/skeleton';
