@@ -34,12 +34,12 @@ elements that we keep rewriting every time we start a new app.
 Inside of a generated ember-cli project run:
 
 ```sh
-npm install --save-dev ember-cli-proto-css
+npm install --save-dev poetic/ember-cli-proto-css
 ```
 ## Usage
 
 ```sh
-ember g proto-css
+ember g proto-scss
 ```
 
 This will generate the SMACSS file structure with files in the .scss format, as
