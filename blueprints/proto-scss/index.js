@@ -5,8 +5,7 @@ var chalk = require('chalk');
 module.exports = {
 
   normalizeEntityName: function(entityName) {
-    // We want this generator to not take arguments so we override this function
-    // and leave it empty.
+    return this.project.pkg.name;
   },
 
   afterInstall: function() {
@@ -18,7 +17,9 @@ module.exports = {
       this.ui.writeLine('  ' + chalk.green('Removing default app.css file'));
     }
 
-    return this.addPackageToProject('ember-cli-sass');
+    var blueprint = this;
+    return this.addPackageToProject('ember-cli-compass-compiler').
+      then(blueprint.addBowerPackageToProject('singularity'))
   }
 
 }
