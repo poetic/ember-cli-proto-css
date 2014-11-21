@@ -1,4 +1,7 @@
-// You need to manually import any scss files under modules
+// Bourbon
+@import '../../bower_components/bourbon/dist/bourbon';
+// Singularity
+@import '../../bower_components/singularity/stylesheets/singularitygs';
 
 @import
   'global/variables',
