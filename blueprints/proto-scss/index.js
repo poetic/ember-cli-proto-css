@@ -18,11 +18,8 @@ module.exports = {
     }
 
     var blueprint = this;
-    return this.addPackageToProject('ember-cli-compass-compiler').
-      then(function() {
-      return blueprint.addPackageToProject('ember-cli-bourbon');
-    }).then(function() {
-      return blueprint.addBowerPackageToProject('singularity');
+    return this.addPackageToProject('ember-cli-compass-compiler').then(function() {
+      return blueprint.addBowerPackagesToProject([{name: 'bourbon'}, {name: 'singularity'}]);
     });
   }
 }
