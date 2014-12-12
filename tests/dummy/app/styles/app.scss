@@ -1,0 +1,18 @@
+// Bourbon
+@import 'bourbon';
+
+// layout/_skeleton.scss holds the current styles on dummy app
+
+@import
+  'global/variables',
+  'global/mixins',
+  'global/functions',
+  'global/reset',
+  'base',
+  'layout',
+  'module',
+  'state',
+  'layout/grid',
+  'layout/skeleton';
+
+

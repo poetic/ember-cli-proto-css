@@ -4,9 +4,7 @@ var chalk = require('chalk');
 
 module.exports = {
 
-  normalizeEntityName: function(entityName) {
-    return this.project.pkg.name;
-  },
+  normalizeEntityName: function(/* entityName */) {},
 
   afterInstall: function() {
     // remove default app.css
@@ -14,12 +12,12 @@ module.exports = {
 
     if (fs.existsSync(defaultAppCssFile)) {
       fs.unlinkSync(defaultAppCssFile);
-      this.ui.writeLine('  ' + chalk.green('Removing default app.css file'));
+      this.ui.writeLine('ember-cli-proto-css: ' + chalk.green('Replacing default app.css file...'));
     }
 
     var blueprint = this;
-    return this.addPackageToProject('ember-cli-compass-compiler').then(function() {
-      return blueprint.addBowerPackagesToProject([{name: 'bourbon'}, {name: 'singularity'}]);
+    return this.addPackageToProject('broccoli-sass').then(function() {
+      return blueprint.addBowerPackagesToProject([{name: 'bourbon'}]);
     });
   }
 }

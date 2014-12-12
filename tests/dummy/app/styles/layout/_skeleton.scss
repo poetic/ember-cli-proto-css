@@ -1,0 +1,23 @@
+// Skeleton //
+body {
+  margin: 20px;
+  font-family: $helvetica;
+}
+
+.sparta {
+  @include background-image(linear-gradient(to left, #FFF, #2a2a2a));
+  color: white;
+  padding: 20px;
+  font-size: golden-ratio(14px, 2);
+  margin-bottom: 20px;
+}
+
+.things {
+  @include transform( rotate(4deg) skew(5deg, 10deg) );
+  position: absolute;
+}
+
+h2 {
+  font-size: golden-ratio(14px, 1);
+  margin-bottom: 20px;
+}
